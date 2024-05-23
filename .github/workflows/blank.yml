@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Have What It Takes to Be My Sugar Baby?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            padding: 3px;
+        }
+        button {
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Do You Have What It Takes to Be My Sugar Baby?</h1>
+    </header>
+    <div class="container">
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age (21 or older)</label>
+            <input type="number" id="age" name="age" min="21" required>
+            
+            <label for="body_type">Body Type</label>
+            <input type="text" id="body_type" name="body_type" required>
+            
+            <label for="ethnicity">Ethnicity</label>
+            <input type="text" id="ethnicity" name="ethnicity" required>
+            
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" name="weight" required>
+            
+            <label for="height">Height</label>
+            <input type="text" id="height" name="height" required>
+            
+            <label for="hair_color">Hair Color</label>
+            <input type="text" id="hair_color" name="hair_color" required>
+            
+            <label for="tattoos">Tattoos</label>
+            <input type="text" id="tattoos" name="tattoos" required>
+            
+            <label for="drinks">Do You Drink?</label>
+            <select id="drinks" name="drinks" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="smokes">Do You Smoke?</label>
+            <select id="smokes" name="smokes" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="kids">Do You Have Kids?</label>
+            <select id="kids" name="kids" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="employment">Employment Status</label>
+            <input type="text" id="employment" name="employment" required>
+            
+            <label for="photos">Upload Photos (Front, Back, Sides, Full Body, Face, Formal Dress, Bikini or Similar)</label>
+            <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
